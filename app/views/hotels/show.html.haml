@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @hotel.title
+%p
+  %b Body:
+  = @hotel.body
+
+= link_to 'Edit', edit_hotel_path(@hotel)
+\|
+= link_to 'Back', hotels_path
